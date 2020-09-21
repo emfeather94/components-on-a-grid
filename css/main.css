@@ -41,7 +41,7 @@ header {
 .logo {
   grid-column: 1;
   grid-row: 1;
-  z-index: 1;
+  z-index: 2;
   width: 14rem;
   position: absolute;
   left: 5%;
@@ -85,4 +85,9 @@ figure {
 h2 {
   font-family: "Patua One", sans-serif;
   color: #30658d;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
