@@ -23,12 +23,17 @@ body {
     "header header"
     "main   main";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1.32fr 1fr;
 }
 
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+  margin: 0;
+}
+
+.banner {
+  display: grid;
   grid-area: header;
   position: relative;
 }
@@ -38,14 +43,14 @@ header {
   grid-row: 1 / -1;
 }
 
-.logo {
+h1 {
   grid-column: 1;
   grid-row: 1;
-  z-index: 2;
+  z-index: 1;
   width: 14rem;
   position: absolute;
   left: 5%;
-  bottom: 0;
+  bottom: 10%;
 }
 
 ul {
@@ -76,6 +81,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
+  margin: 0;
 }
 
 figure {
@@ -85,7 +91,7 @@ figure {
 h2 {
   font-family: "Patua One", sans-serif;
   color: #30658d;
-  margin: 0;
+  margin: 1rem 0 0;
 }
 
 p {
